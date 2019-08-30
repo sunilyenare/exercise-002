@@ -24,4 +24,10 @@ public class RectangleTest {
         Rectangles rectangle=new Rectangles(0.f,1.0f);
         Assertions.assertEquals(0.0f,rectangle.area());
     }
+    @Test
+    void givenZeroLengthAndWidth_WhenCalculatePerameter_ThenShouldReturnZero(){
+
+        Rectangles rectangle=new Rectangles(0.f,0.0f);
+        Assertions.assertEquals(0.0f,rectangle.perameter());
+    }
 }

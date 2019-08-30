@@ -13,4 +13,8 @@ public class Rectangles {
 
         return length*width;
     }
+
+    public float perameter() {
+        return 0.0f;
+    }
 }
