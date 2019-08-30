@@ -10,6 +10,7 @@ public class Rectangles {
     }
 
      float area(){
-        return 0.0f;
+
+        return length*width;
     }
 }
