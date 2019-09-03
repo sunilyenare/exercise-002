@@ -25,5 +25,10 @@ public class SquareTest {
         RectangleOrSquare square = ShapeFactory.getSquare(size);
         assertEquals(0.0f, square.perimeter());
     }
-
+    @Test
+    void givenTwoSizeSquare_WhenCalculatePerimeter_thenShouldReturnEight() {
+        float size = 2.0f;
+        RectangleOrSquare square = ShapeFactory.getSquare(size);
+        assertEquals(8.0f, square.perimeter());
+    }
 }
