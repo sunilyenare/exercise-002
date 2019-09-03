@@ -19,5 +19,11 @@ public class SquareTest {
         RectangleOrSquare square = ShapeFactory.getSquare(size);
         assertEquals(4.0f, square.area());
     }
+    @Test
+    void givenZeroSizeSquare_WhenCalculatePerimeter_thenShouldReturnZero() {
+        float size = 0.0f;
+        RectangleOrSquare square = ShapeFactory.getSquare(size);
+        assertEquals(0.0f, square.perimeter());
+    }
 
 }
