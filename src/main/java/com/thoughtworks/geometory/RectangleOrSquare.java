@@ -16,6 +16,6 @@ public class RectangleOrSquare {
     }
 
     public float perimeter() {
-        return 0.0f;
+        return 2*(length+width);
     }
 }
