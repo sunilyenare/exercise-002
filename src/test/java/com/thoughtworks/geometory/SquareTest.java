@@ -8,8 +8,7 @@ public class SquareTest {
     @Test
     void givenZeroSizeSquare_WhenCalculateArea_thenShouldReturnZero() {
         float size = 0.0f;
-        Square square = new Square(size);
+        RectangleOrSquare square = ShapeFactory.getSquare(size);
         assertEquals(0.0f, square.area());
     }
-
 }

@@ -1,12 +1,12 @@
 package com.thoughtworks.geometory;
 
-public class Rectangles {
+public class RectangleOrSquare {
 
     private float length;
     private float width;
 
-    Rectangles(float lenght, float width) {
-        this.length = lenght;
+    RectangleOrSquare(float length, float width) {
+        this.length = length;
         this.width = width;
     }
 
@@ -15,7 +15,7 @@ public class Rectangles {
         return length * width;
     }
 
-    public float perameter() {
+    public float perimeter() {
         return 0.0f;
     }
 }
