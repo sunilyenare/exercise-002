@@ -10,7 +10,7 @@ public class Rectangle {
         this.width = width;
     }
 
-    public static Rectangle rectangle(float length, float breadth) {
+    public static Rectangle createRectangle(float length, float breadth) {
         return new Rectangle(length, breadth);
     }
 
