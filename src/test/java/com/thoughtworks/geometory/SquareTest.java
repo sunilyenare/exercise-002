@@ -1,18 +1,19 @@
 package com.thoughtworks.geometory;
 
-import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import static com.thoughtworks.geometory.Rectangle.createSquare;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class SquareTest {
-    private RectangleOrSquare squareOfSizeZero;
-    private RectangleOrSquare squareOfSizeTwo;
+    private static Rectangle squareOfSizeZero;
+    private static Rectangle squareOfSizeTwo;
 
-    @BeforeEach
-    void setUp() {
-        squareOfSizeZero = ShapeFactory.getSquare(0.0f);
-        squareOfSizeTwo = ShapeFactory.getSquare(2.0f);
+    @BeforeAll
+    static void setUp() {
+        squareOfSizeZero = createSquare(0.0f);
+        squareOfSizeTwo = createSquare(2.0f);
     }
 
     @Test
