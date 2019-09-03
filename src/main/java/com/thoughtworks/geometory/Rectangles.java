@@ -4,14 +4,15 @@ public class Rectangles {
 
     private float length;
     private float width;
-    Rectangles(float lenght,float width){
-        this.length=lenght;
-        this.width=width;
+
+    Rectangles(float lenght, float width) {
+        this.length = lenght;
+        this.width = width;
     }
 
-     float area(){
+    float area() {
 
-        return length*width;
+        return length * width;
     }
 
     public float perameter() {

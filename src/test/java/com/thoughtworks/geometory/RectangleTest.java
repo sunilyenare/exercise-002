@@ -6,28 +6,30 @@ import org.junit.jupiter.api.Test;
 public class RectangleTest {
 
     @Test
-    void givenZeroLengthAndWidth_whenCalculateArea_thenShouldReturnZero(){
+    void givenZeroLengthAndWidth_whenCalculateArea_thenShouldReturnZero() {
 
-        Rectangles rectangle=new Rectangles(0.0f,0.0f);
+        Rectangles rectangle = new Rectangles(0.0f, 0.0f);
 
-        Assertions.assertEquals(0,rectangle.area());
-    }
-    @Test
-    void givenLengthAndWidth_whenCalculateArea_thenShouldReturnArea(){
-        Rectangles rectangle=new Rectangles(1.0f,1.0f);
-
-        Assertions.assertEquals(1.0f,rectangle.area());
+        Assertions.assertEquals(0, rectangle.area());
     }
 
     @Test
-    void givenZeroLengthAndNonZeroWidth_whenCalculateArea_thenReturnAreaZero(){
-        Rectangles rectangle=new Rectangles(0.f,1.0f);
-        Assertions.assertEquals(0.0f,rectangle.area());
-    }
-    @Test
-    void givenZeroLengthAndWidth_WhenCalculatePerameter_ThenShouldReturnZero(){
+    void givenLengthAndWidth_whenCalculateArea_thenShouldReturnArea() {
+        Rectangles rectangle = new Rectangles(1.0f, 1.0f);
 
-        Rectangles rectangle=new Rectangles(0.f,0.0f);
-        Assertions.assertEquals(0.0f,rectangle.perameter());
+        Assertions.assertEquals(1.0f, rectangle.area());
+    }
+
+    @Test
+    void givenZeroLengthAndNonZeroWidth_whenCalculateArea_thenReturnAreaZero() {
+        Rectangles rectangle = new Rectangles(0.f, 1.0f);
+        Assertions.assertEquals(0.0f, rectangle.area());
+    }
+
+    @Test
+    void givenZeroLengthAndWidth_WhenCalculatePerameter_ThenShouldReturnZero() {
+
+        Rectangles rectangle = new Rectangles(0.f, 0.0f);
+        Assertions.assertEquals(0.0f, rectangle.perameter());
     }
 }
